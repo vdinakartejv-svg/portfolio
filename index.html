@@ -363,7 +363,7 @@ if(G)gsap.registerPlugin(ScrollTrigger);
 
 /* ===== IMAGE AND VIDEO PATHS ===== */
 /* Your GitHub repository stores these folders at the root. */
-const I=n=>`${n}.webp`;
+const I=n=>/\.(?:webp|png|jpe?g)$/i.test(n)?n:`${n}.webp`;
 const V=k=>`video/${k}.mp4`;
 
 $('#portrait').src='profile/dnkr.png';
@@ -376,8 +376,8 @@ const P={
 lamp:{
 n:'01',t:'Lamp',ref:'lamp/reference',hero:'lamp/hero',
 gray:['lamp/gray-1','lamp/gray-2','lamp/gray-3','lamp/gray-4','lamp/gray-5'],
-wire:['lamp/wire-1','lamp/wire-2','lamp/wire-3','lamp/wire-4'],
-tex:['lamp/tex-normal','lamp/tex-basecolour','lamp/tex-roughness','lamp/tex-emissive','lamp/tex-metallic','lamp/uv-map'],
+wire:['lamp/img029','lamp/img030','lamp/img031','lamp/img032'],
+tex:['lamp/normal','lamp/tex-basecolour','lamp/rougness','lamp/tex-emissive','lamp/tex-metallic','lamp/Screenshot 2026-06-05 120935.png'],
 lh:['lamp/lowpoly','lamp/highpoly'],
 fin:['lamp/render-1','lamp/render-2','lamp/render-3','lamp/render-4','lamp/render-5']
 },
